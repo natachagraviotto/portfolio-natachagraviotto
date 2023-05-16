@@ -5,19 +5,19 @@ import { Link, Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <header className="menu">
+      <header className="header">
         <strong className="logotipo">MI LOGO</strong>
-        <nav className="navegation">
-          <Link className="link" to="/">
+        <nav className="header-nav">
+          <Link className="header-link" to="/">
             Home
           </Link>
-          <Link className="link" to="/projects">
+          <Link className="header-link" to="/projects">
             Projects
           </Link>
-          <Link className="link" to="/about">
+          <Link className="header-link" to="/about">
             About
           </Link>
-          <Link className="link" to="/contact">
+          <Link className="header-link" to="/contact">
             Contact
           </Link>
         </nav>
