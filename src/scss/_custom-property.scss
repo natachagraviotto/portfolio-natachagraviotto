@@ -1,0 +1,23 @@
+:root {
+  /* PONER MARGENES */
+  /* PONER GAP */
+  /* PONER PADDINGS */
+
+  /* FONT */
+  --main-font: "Unbounded";
+  --light-font-weight: 300px;
+  --medium-font-weight: 500px;
+  --semibold-font-weight: 600px;
+  --bold-font-weight: 700px;
+
+  /* FONT-SIZE */
+  --font-l: 12.5rem; /* 200px; */
+  --font-m: 3rem; /* 50px */
+  --font-s: 2rem; /*32px;*/
+
+  /* COLORS */
+  --black: hsl (360, 8%, 10%);
+  --white: hsl (0, 0%, 100%);
+  --dark-color: var(--black);
+  --light-color: var(--white);
+}

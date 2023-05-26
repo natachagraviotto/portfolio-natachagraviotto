@@ -1,29 +1,38 @@
 import "./App.scss";
 import "./scss/global.scss";
 import { Link, Outlet } from "react-router-dom";
+import { MdViewCompact } from "react-icons/md"; /* ASÍ IMPORTAMOS LA BIBLIOTECA DE ICONOS */
 
 function App() {
   return (
-    <>
+    <div className="app">
       <header className="header">
-        <strong className="logotipo">MI LOGO</strong>
         <nav className="header-nav">
-          <Link className="header-link" to="/">
-            Home
-          </Link>
-          <Link className="header-link" to="/projects">
-            Projects
-          </Link>
-          <Link className="header-link" to="/about">
-            About
-          </Link>
-          <Link className="header-link" to="/contact">
-            Contact
-          </Link>
+          <div className="header-logo">
+            <img
+              className="logotipo-negro"
+              src="src/assets/img/logo_negro.png"
+              alt="Logotipo"
+            />
+          </div>
+          <div className="header-nav">
+            <Link className="header-link" to="/">
+              Home
+            </Link>
+            <Link className="header-link" to="/projects">
+              Projects
+            </Link>
+            <Link className="header-link" to="/about">
+              About
+            </Link>
+            <Link className="header-link" to="/contact">
+              Contact
+            </Link>
+          </div>
         </nav>
       </header>
       <Outlet />
-    </>
+    </div>
   );
 }
 

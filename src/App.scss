@@ -1,7 +1,11 @@
 #root {
   width: 100%;
   margin: 0;
-  padding: 2rem;
-  text-align: center;
   font-family: "Unbounded", regular;
+}
+
+.app {
+  background-image: url("./assets/img/background.png");
+  background-size: cover;
+  min-height: 100vh;
 }

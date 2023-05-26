@@ -1,5 +1,24 @@
+import ContentLink from "../../components/content-link/ContentLink";
+
 function Contact() {
-  return <div>Esta es mi página de contacto</div>;
+  return (
+    <section className="contact-page">
+      <h2 className="title">Contact me! :)</h2>
+      <div className="contact-mail">
+        <h3 className="contact-text">Mail</h3>
+        <p>ngraviotto@gmail.com</p>
+      </div>
+
+      <div className="contact-RRSS">
+        <h3 className="contact-text">RRSS</h3>
+        <ul>
+          <li>Instagram</li>
+          <li>Linkedin</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;
