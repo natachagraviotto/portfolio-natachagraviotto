@@ -9,14 +9,17 @@ function App() {
       <header className="header">
         <nav className="header-nav">
           <div className="header-logo">
-            <img
-              className="logotipo-negro"
-              src="src/assets/img/logo_negro.png"
-              alt="Logotipo"
-            />
+            <a href="/landing">
+              <img
+                className="logotipo-negro"
+                src="src/assets/img/logo_negro.png"
+                alt="Logotipo"
+              />
+            </a>
           </div>
           <div className="header-nav">
-            <Link className="header-link" to="/">
+            <Link className="header-link" to="/"></Link>
+            <Link className="header-link" to="/landing">
               Home
             </Link>
             <Link className="header-link" to="/projects">
@@ -31,6 +34,7 @@ function App() {
           </div>
         </nav>
       </header>
+
       <Outlet />
     </div>
   );
