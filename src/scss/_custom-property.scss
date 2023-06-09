@@ -14,10 +14,33 @@
   --font-l: 12.5rem; /* 200px; */
   --font-m: 3rem; /* 50px */
   --font-s: 2rem; /*32px;*/
+  --font-xs: 1.5rem; /* 24px */
 
   /* COLORS */
   --black: hsl (360, 8%, 10%);
   --white: hsl (0, 0%, 100%);
   --dark-color: var(--black);
   --light-color: var(--white);
+  --text-color: red;
 }
+
+.dark-mode {
+  --text-color: #fff;
+}
+
+.light-mode {
+  --text-color: #333;
+}
+/* DARK/LIGHT */
+$color-text-light: #333;
+$color-text-dark: #fff;
+
+.text-color-light {
+  color: $color-text-light;
+}
+
+.text-color-dark {
+  color: $color-text-dark;
+}
+
+// $icon-size: 50px;
