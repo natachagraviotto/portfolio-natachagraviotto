@@ -9,7 +9,7 @@ function Landing() {
       </h1>
       <section className="button-img">
         <div className="home-button">
-          <ContentLink to="/projects">Download my CV</ContentLink>
+          <ContentLink children="Download my CV" />
         </div>
         <div>
           <img

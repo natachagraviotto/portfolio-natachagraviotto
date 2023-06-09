@@ -8,8 +8,8 @@ function Landing() {
         I’m a UX/UI designer, graphic designer & front-end developer
       </h1>
       <div className="home-buttons">
-        <ContentLink to="/projects">See my projects</ContentLink>
-        <ContentLink to="/projects">Contact me :)</ContentLink>
+        <ContentLink to="/projects" children="See my projects" svgIcon="" />
+        <ContentLink to="/contact">Contact me :)</ContentLink>
       </div>
     </section>
   );
