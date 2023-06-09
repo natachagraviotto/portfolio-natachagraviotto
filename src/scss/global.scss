@@ -6,84 +6,10 @@ body {
   background-color: white;
 }
 
-/* LIGHT AND DARK MODE
-html {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--lightBg);
-  --lightBtn: #fe016c;
-  --lightBg: #fff;
-  --lightColor: #232323;
+.dark-mode,
+.light-mode {
+  color: var(--text-color);
 }
-
-html[data-theme="dark"] {
-  background: var(--lightBg);
-  --lightBtn: #ffbd07;
-  --lightBg: #232323;
-  --lightColor: #fff;
-}
-
-input[type="checkbox"] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 55px;
-  height: 30px;
-  background: var(--lightBtn);
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  position: relative;
-}
-
-label:after {
-  content: "";
-  background: #fff;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-}
-
-input:checked + label {
-  background: #ffbd07;
-}
-
-input:checked + label:after {
-  left: calc(100% - 5px);
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms !important;
-  transition-delay: 0 !important;
-}
-*/
 
 .header {
   padding: 2rem;
@@ -93,6 +19,11 @@ html.transition *:after {
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-buttons {
+  display: flex;
 }
 
 .header-link {
@@ -110,7 +41,7 @@ html.transition *:after {
 /* hero-intro */
 .home-page {
   margin: 0;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 200px);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -131,44 +62,8 @@ html.transition *:after {
   font-size: 32px;
 }
 
-/* BOTONES */
-.home-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.home-button {
-  text-decoration: none;
-  background: none;
-  border: none;
-  color: var(--black);
-  font-family: "Unbounded", regular;
-  font-size: var(--font-s);
-  font-weight: 500;
-}
-
-/* PROJECTS */
-.box-project {
-  width: 408px;
-  height: 469px;
-  border-radius: 15px;
-  margin: 1.5rem;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-.box-button {
-  background-color: pink;
-  border: 2px solid black;
-  width: 370px;
-  height: 43px;
-  border-radius: 15px;
-  margin-top: 15px;
-}
-
 .carrusel-projects {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -199,6 +94,83 @@ html.transition *:after {
 .img-portrait {
   border-radius: 50%;
   border: 2px solid #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* BOTONES */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.home-button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: var(--black);
+  font-family: "Unbounded", regular;
+  font-size: var(--font-s);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+
+/* PROJECTS */
+.box-project {
+  width: 408px;
+  height: 469px;
+  border-radius: 15px;
+  margin: 1.5rem;
+  background-image: linear-gradient(20% black, 100%white);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("/src/assets/img/project-viro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+/* BUTTONS PROJECTS */
+.box-button {
+  border: 2px solid black;
+  width: 370px;
+  height: 43px;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-family: inherit;
+  font-size: var(--font-xs);
+}
+
+.box-button-pink {
+  background: linear-gradient(to right, transparent, pink);
+}
+
+.box-button-bisque {
+  background: linear-gradient(to right, transparent, bisque);
+}
+
+.box-button-lightgreen {
+  background: linear-gradient(to right, transparent, lightgreen);
+}
+
+.box-button-lightyellow {
+  background: linear-gradient(to right, transparent, lightyellow);
+}
+
+.box-button-lightcoral {
+  background: linear-gradient(to right, transparent, lightcoral);
+}
+
+.box-button-lightseagreen {
+  background: linear-gradient(to right, transparent, lightseagreen);
 }
 
 .about-page {
