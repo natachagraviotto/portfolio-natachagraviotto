@@ -4,13 +4,15 @@ import IconArrowReturnRight from "../icons/IconArrow";
 
 function ContentLink(props) {
   return (
-    <>
-      <IconArrowReturnRight />
-      <Link className="button" to={props.to}>
-        {props.children}
-        {props.icon}
-      </Link>
-    </>
+    <div className="box-button">
+      <>
+        <IconArrowReturnRight />
+        <Link className="button" to={props.to}>
+          {props.text}
+          {props.icon}
+        </Link>
+      </>
+    </div>
   );
 }
 export default ContentLink;
