@@ -1,0 +1,13 @@
+.button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: var(--black);
+  font-family: "Unbounded", regular;
+  font-size: var(--font-s);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
