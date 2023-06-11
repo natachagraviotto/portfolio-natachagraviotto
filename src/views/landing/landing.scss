@@ -1,5 +1,18 @@
-.box-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+.home-page {
+  h1 {
+    font-weight: lighter;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .box {
+    display: flex;
+    gap: 20px;
+  }
 }
