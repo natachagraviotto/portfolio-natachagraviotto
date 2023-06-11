@@ -5,10 +5,10 @@
 
   /* FONT */
   --main-font: "Unbounded";
-  --light-font-weight: 300px;
-  --medium-font-weight: 500px;
-  --semibold-font-weight: 600px;
-  --bold-font-weight: 700px;
+  --light-font-weight: 300;
+  --medium-font-weight: 500;
+  --semibold-font-weight: 600;
+  --bold-font-weight: 700;
 
   /* FONT-SIZE */
   --font-l: 12.5rem; /* 200px; */
@@ -31,16 +31,17 @@
 .light-mode {
   --text-color: #333;
 }
-/* DARK/LIGHT */
-$color-text-light: #333;
-$color-text-dark: #fff;
 
-.text-color-light {
-  color: $color-text-light;
-}
+// /* DARK/LIGHT */
+// $color-text-light: #333;
+// $color-text-dark: #fff;
 
-.text-color-dark {
-  color: $color-text-dark;
-}
+// .text-color-light {
+//   color: $color-text-light;
+// }
+
+// .text-color-dark {
+//   color: $color-text-dark;
+// }
 
 // $icon-size: 50px;
