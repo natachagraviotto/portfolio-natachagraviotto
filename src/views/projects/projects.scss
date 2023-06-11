@@ -1,0 +1,35 @@
+/* PROJECTS */
+
+.hero-projects {
+  --bg-linear: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  .box-project {
+    width: 408px;
+    height: 469px;
+    border-radius: 15px;
+    margin: 1.5rem;
+    //background-image: linear-gradient(20% black, 100%white);
+    background-image: var(--bg-linear), url("/src/assets/img/project-viro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .bg-viro {
+    background-image: var(--bg-linear), url("/src/assets/img/project-viro.jpg");
+  }
+  .bg-app {
+    background-image: var(--bg-linear), url("/src/assets/img/project-app.png");
+  }
+  .button-img {
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    margin-top: 20px;
+  }
+}

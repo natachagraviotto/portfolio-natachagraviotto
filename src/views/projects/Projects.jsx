@@ -1,13 +1,20 @@
+import "./projects.scss";
+import ProjectBox from "../../components/project-box/ProjectBox";
+
 function Projects() {
   return (
     <section className="hero-projects">
-      <h2 className="home-h2">Projects</h2>
+      <h1>Projects</h1>
       <div className="carrusel-projects">
+        <ProjectBox title="project1" color="bisque" bgclass="bg-viro" />
+        <ProjectBox title="project2" color="pink" bgclass="bg-app" />
+
         <div className="box-project">
           <button className="box-button box-button-pink">
             Brand Identity Design
           </button>
         </div>
+
         <div className="box-project">
           <button className="box-button box-button-bisque">
             Brand Identity Design
