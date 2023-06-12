@@ -1,20 +1,17 @@
+import "./about.scss";
 import ContentLink from "../../components/content-link/ContentLink";
 
 function Landing() {
   return (
     <section className="about-page">
-      <h2 className="title">About</h2>
-      <h1 className="home-h1">
-        I’m a UX/UI designer, graphic designer & front-end developer
-      </h1>
+      <h1>About</h1>
+      <h2>I’m a UX/UI designer, graphic designer & front-end developer</h2>
       <section className="button-img">
-        <div className="home-button">
-          <ContentLink children="Download my CV" />
-        </div>
-        <div>
+        <ContentLink text="Download my CV" />
+        <div class="box-img">
           <img
             className="img-portrait"
-            src="/src/assets/img/portrait.jpg"
+            src="/img/portrait.jpg"
             alt="Foto de perfil Natacha"
           />
         </div>
