@@ -1,9 +1,9 @@
 // icon:menu-grid-r | CSS Icons https://css.gg/ | Astrit
-// import * as React from "react";
 import React, { useState } from "react";
-import { CgMenuGridO } from "react-icons/cg";
+import "./rightmenu.scss";
 import { Link, Outlet } from "react-router-dom";
-// import IconMenuGridR from "../icons/iconMenu";
+
+import { CgMenuGridO } from "react-icons/cg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Menu = () => {
@@ -24,25 +24,25 @@ const Menu = () => {
 
             <ul className="links-menu">
               <li>
-                <Link className="" to="/"></Link>
+                <Link className="" to="/" onClick={toggleMenu}></Link>
               </li>
               <li>
-                <Link className="" to="/landing">
+                <Link className="" to="/landing" onClick={toggleMenu}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="" to="/projects">
+                <Link className="" to="/projects" onClick={toggleMenu}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link className="" to="/about">
+                <Link className="" to="/about" onClick={toggleMenu}>
                   About
                 </Link>
               </li>
               <li>
-                <Link className="" to="/contact">
+                <Link className="" to="/contact" onClick={toggleMenu}>
                   Contact
                 </Link>
               </li>
