@@ -3,7 +3,7 @@ import ContentLink from "../../components/content-link/ContentLink";
 function Contact() {
   return (
     <section className="contact-page">
-      <h2 className="title">Contact me! :)</h2>
+      <h1>Contact me! :)</h1>
       <div className="contact-mail">
         <h3 className="contact-text">Mail</h3>
         <p>ngraviotto@gmail.com</p>
