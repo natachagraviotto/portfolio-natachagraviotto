@@ -29,7 +29,7 @@ function App() {
             <a href="/landing">
               <img
                 className="logotipo-negro"
-                src="src/assets/img/logo_negro.png"
+                src="/img/logo_negro.png"
                 alt="Logotipo"
               />
             </a>
