@@ -6,7 +6,9 @@ function ProjectBox(props) {
   return (
     <>
       <div className={combinedClass}>
-        <button className={props.color}>{props.title}</button>
+        <a href={props.link}>
+          <button className={props.color}>{props.title}</button>
+        </a>
       </div>
     </>
   );
