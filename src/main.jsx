@@ -15,7 +15,7 @@ import ProjectDetail from "./views/project-detail/ProjectDetail.jsx";
 const Logo = () => {
   return (
     <div className="logotipo-negro">
-      {/* <Link to="/welcome">Welcome</Link> */}
+      <Link to="/lading"></Link>
     </div>
   );
 };
