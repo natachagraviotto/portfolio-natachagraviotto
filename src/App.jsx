@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { MdViewCompact } from "react-icons/md";
+import { MdWbSunny, MdNightsStay } from "react-icons/md";
+//import { MdViewCompact } from "react-icons/md";
 import "./App.scss";
 import "./scss/global.scss";
-import "./components/right-menu/rightmenu.scss";
+
 import Menu from "./components/right-menu/RightMenu";
-import "../src/components/background-animation/backgroundanimation.scss";
+//import BackgroundAnimation from "../src/components/background-animation/BackgroundAnimation";
 import ThemeToggle from "./components/themetoggle/ThemeToggle";
-import { MdWbSunny, MdNightsStay } from "react-icons/md";
 import "./components/themetoggle/themetoggle.scss";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className={`app ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+      {/*<BackgroundAnimation /> */}
       <header
         className={`header ${
           isDarkMode ? "text-color-light" : "text-color-dark"
