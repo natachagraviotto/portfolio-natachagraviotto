@@ -1,20 +1,29 @@
 import "./projectdetail.scss";
 import ContentLink from "../../components/content-link/ContentLink";
 import "../../components/project-box/projectbox.scss";
-import { useParams } from "react-router-dom";
+import { FaGithub, FaBehance } from "react-icons/fa";
 
 const ProjectDetail = (props) => {
   //const ProjectDetail = () => {
   return (
     <section className="detail-project">
-      <h1>{props.title}</h1>
+      <div className="project-category">{props.category}</div>
 
       <div className="container box-project">
-        <ContentLink text="Download my CV" />
-        <h2 className="home-h2">{props.subtitle}</h2>
-        <p>{props.text}</p>
+        <button className={props.color}>{props.tag}</button>
+        <h1>{props.name}</h1>
+        <p className="description">{props.text}</p>
         <p>
-          ICONO <a href="{props.github}">{props.github} :) </a>
+          {props.github && (
+            <a href="{props.github}">
+              <FaGithub className="icon" />
+            </a>
+          )}
+          {props.behance && (
+            <a href="{props.behance}">
+              <FaBehance className="icon" />
+            </a>
+          )}
         </p>
         <div className="box-images">
           {props.images &&
