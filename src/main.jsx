@@ -8,14 +8,14 @@ import Projects from "./views/projects/Projects.jsx";
 import Landing from "./views/landing/Landing.jsx";
 import About from "./views/about/About.jsx";
 import Contact from "./views/contact/Contact.jsx";
-import Welcome from "./views/welcome/Welcome.jsx";
+// import Welcome from "./views/welcome/Welcome.jsx";
 import { Link } from "react-router-dom";
 import ProjectDetail from "./views/project-detail/ProjectDetail.jsx";
 
 const Logo = () => {
   return (
     <div className="logotipo-negro">
-      <Link to="/welcome">Welcome</Link>
+      {/* <Link to="/welcome">Welcome</Link> */}
     </div>
   );
 };
@@ -28,8 +28,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <div>Esto está roto</div>,
     children: [
-      { index: true, element: <Welcome /> },
-      { path: "landing", element: <Landing /> },
+      { index: true, element: <Landing /> },
       { path: "projects", element: <Projects /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
