@@ -7,7 +7,43 @@
   margin-top: 60px;
   min-height: calc(100vh - 64px);
   //background-color: pink;
+
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+
   h1 {
     text-align: left;
   }
+
+  .contact-mail,
+  .contact-RRSS {
+    display: flex;
+    gap: 70px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 40px;
+    }
+  }
+
+  .contact-text {
+    font-size: 32px;
+    list-style: none;
+    width: 115px;
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dark-mode .contact-page a {
+  color: white;
+}
+
+.light-mode .contact-page a {
+  color: black;
 }
