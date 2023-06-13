@@ -51,24 +51,15 @@ body {
   // animation: moveBackground 20s ease infinite;
 }
 
-.app.dark-mode {
+.app {
   // background-color: black;
-  background: linear-gradient(-45deg, #2d2a2a, #193c3c, #4d3135, #2e3e3e);
-  color: white;
+  background: var(--app-bg);
+  color: var(--text-color);
+  min-height: 100vh;
 }
 
-.app.light-mode {
-  // background-color: #ccc;
-  background: linear-gradient(-45deg, #ffa3b1, #b5eaea, #ffa3b1, #b5eaea);
-  color: black;
-}
-
-.app.dark-mode svg {
-  fill: white;
-}
-
-.app.light-mode svg {
-  fill: black;
+.app svg {
+  fill: var(--text-color);
 }
 
 .app.dark-mode .menu-content a,
@@ -97,6 +88,7 @@ body {
   gap: 40px;
   align-items: center;
   justify-content: space-between;
+  padding: 50px 50px 0px 50px;
 }
 
 .header-nav-buttons {
@@ -109,7 +101,7 @@ body {
   color: var(--black);
 }
 
-.logotipo-negro {
+.logotipo {
   display: flex;
   width: 50px;
   height: 50px;
@@ -118,7 +110,7 @@ body {
 /* hero-intro */
 .home-page {
   margin: 0;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 320px);
   text-align: center;
   align-items: center;
   justify-content: center;

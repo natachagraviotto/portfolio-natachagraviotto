@@ -1,5 +1,6 @@
 import "./about.scss";
 import ContentLink from "../../components/content-link/ContentLink";
+import CV from "../../../public/img/CV_2023_ES.pdf";
 
 function Landing() {
   return (
@@ -7,7 +8,7 @@ function Landing() {
       <h1>About</h1>
       <h2>I’m a UX/UI designer, graphic designer & front-end developer</h2>
       <section className="button-img">
-        <ContentLink text="Download my CV" />
+        <ContentLink text="Download my CV" to={CV} isExternalLink download />
         <div class="box-img">
           <img
             className="img-portrait"

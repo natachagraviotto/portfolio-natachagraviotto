@@ -21,15 +21,21 @@
   --white: hsl (0, 0%, 100%);
   --dark-color: var(--black);
   --light-color: var(--white);
-  --text-color: red;
+  --text-color: #fff;
+  --app-bg: linear-gradient(-45deg, #ffa3b1, #b5eaea, #ffa3b1, #b5eaea);
+  --project-bg: #fff;
 }
 
 .dark-mode {
   --text-color: #fff;
+  --app-bg: linear-gradient(-45deg, #2d2a2a, #193c3c, #4d3135, #2e3e3e);
+  --project-bg: rgba(255, 255, 255, 0.5);
 }
 
 .light-mode {
-  --text-color: #333;
+  --app-bg: linear-gradient(-45deg, #ffa3b1, #b5eaea, #ffa3b1, #b5eaea);
+  --text-color: black;
+  --project-bg: #fff;
 }
 
 // /* DARK/LIGHT */

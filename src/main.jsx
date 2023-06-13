@@ -14,7 +14,7 @@ import ProjectDetail from "./views/project-detail/ProjectDetail.jsx";
 
 const Logo = () => {
   return (
-    <div className="logotipo-negro">
+    <div className="logotipo">
       <Link to="/lading"></Link>
     </div>
   );
@@ -41,9 +41,9 @@ const router = createBrowserRouter([
             tag="Ilustrator/Photoshop"
             color="bisque"
             name="VIRO"
-            github="https://github.com/natachagraviotto/portfolio-natachagraviotto"
+            behance="https://www.behance.net/gallery/167552931/Logotipo-VIRO"
             text="This project highlights his unique style and creative approach, reflecting his artistic vision and technical skills. It conveys sophistication and elegance establishing a solid foundation to promote his brand and attract new clients in the world of interior design and architecture."
-            images={["/img/project-viro.jpg", "/img/project-viro.jpg"]}
+            images={["/img/project-viro.jpg", "/img/project-viro2.jpg"]}
           />
         ),
       },
@@ -56,68 +56,27 @@ const router = createBrowserRouter([
             color="pink"
             name="APP HER"
             behance="https://www.behance.net/gallery/167550531/App-menstrual-Her"
+            text="This project seeks to empower women by providing an intuitive and easy-to-use tool to track and understand their menstrual cycle. The prototype offers a fluid, customizable interface packed with useful features such as symptom tracking, contraceptive reminders and accurate predictions. This user-centered design aims to improve women's health and well-being by offering a digital experience that is tailored to their individual needs."
+            images={[
+              "/img/project-app2.png",
+              "/img/project-app.png",
+              "/img/project-app4.png",
+              "/img/project-app3.png",
+            ]}
+          />
+        ),
+      },
+      {
+        path: "projects/calculator",
+        element: (
+          <ProjectDetail
+            category="Calculator"
+            tag="Ilustrator/Photoshop"
+            color="bisque"
+            name="CALCULATOR"
+            behance="https://www.behance.net/gallery/167552931/Logotipo-VIRO"
             text="This project highlights his unique style and creative approach, reflecting his artistic vision and technical skills. It conveys sophistication and elegance establishing a solid foundation to promote his brand and attract new clients in the world of interior design and architecture."
-            images={["/img/project-viro.jpg", "/img/project-viro.jpg"]}
-          />
-        ),
-      },
-      {
-        path: "projects/project3",
-        element: (
-          <ProjectDetail
-            tag="Ilustrator/Photoshop"
-            title="project 3"
-            github="https://www.github.com"
-            text="`${projectAppText}`"
-            images={[
-              "https://dummyimage.com/600x400/000/fff",
-              "https://dummyimage.com/600x400/000/ff0000",
-            ]}
-          />
-        ),
-      },
-      {
-        path: "projects/project4",
-        element: (
-          <ProjectDetail
-            tag="Ilustrator/Photoshop"
-            title="project 4"
-            github="https://www.github.com"
-            text="`${projectAppText}`"
-            images={[
-              "https://dummyimage.com/600x400/000/fff",
-              "https://dummyimage.com/600x400/000/ff0000",
-            ]}
-          />
-        ),
-      },
-      {
-        path: "projects/project4",
-        element: (
-          <ProjectDetail
-            tag="Ilustrator/Photoshop"
-            title="project 4"
-            github="https://www.github.com"
-            text="`${projectAppText}`"
-            images={[
-              "https://dummyimage.com/600x400/000/fff",
-              "https://dummyimage.com/600x400/000/ff0000",
-            ]}
-          />
-        ),
-      },
-      {
-        path: "projects/project4",
-        element: (
-          <ProjectDetail
-            tag="Ilustrator/Photoshop"
-            title="project 4"
-            github="https://www.github.com"
-            text="`${projectAppText}`"
-            images={[
-              "https://dummyimage.com/600x400/000/fff",
-              "https://dummyimage.com/600x400/000/ff0000",
-            ]}
+            images={["/img/project-calculator.png", "/img/project-viro2.jpg"]}
           />
         ),
       },

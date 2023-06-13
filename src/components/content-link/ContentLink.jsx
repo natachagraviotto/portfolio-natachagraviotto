@@ -7,10 +7,17 @@ function ContentLink(props) {
     <div className="box-button">
       <>
         <IconArrowReturnRight />
-        <Link className="button" to={props.to}>
-          {props.text}
-          {props.icon}
-        </Link>
+        {props.isExternalLink ? (
+          <a className="button" href={props.to} download={props.download}>
+            {props.text}
+            {props.icon}
+          </a>
+        ) : (
+          <Link className="button" to={props.to}>
+            {props.text}
+            {props.icon}
+          </Link>
+        )}
       </>
     </div>
   );

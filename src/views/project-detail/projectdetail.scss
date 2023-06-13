@@ -1,5 +1,5 @@
 .container {
-  background-color: white;
+  background-color: var(--project-bg);
   width: 800px;
   margin: 0 auto;
   border-radius: 30px;
@@ -8,7 +8,7 @@
 }
 
 .detail-project {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 
   .project-category {
     text-align: center;
