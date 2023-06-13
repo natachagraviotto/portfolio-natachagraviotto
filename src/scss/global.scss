@@ -33,13 +33,33 @@ h3 {
 //   background-color: white;
 // }
 
+// BACKGROUND
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  //background: linear-gradient(-45deg, #ffa3b1, #b5eaea, #ffa3b1, #b5eaea);
+  background-size: 400% 400%;
+  // animation: moveBackground 20s ease infinite;
+}
+
 .app.dark-mode {
-  background-color: black;
+  // background-color: black;
+  background: linear-gradient(-45deg, #2d2a2a, #193c3c, #4d3135, #2e3e3e);
   color: white;
 }
 
 .app.light-mode {
-  background-color: #ccc;
+  // background-color: #ccc;
+  background: linear-gradient(-45deg, #ffa3b1, #b5eaea, #ffa3b1, #b5eaea);
   color: black;
 }
 
