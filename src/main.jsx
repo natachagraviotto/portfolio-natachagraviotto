@@ -29,6 +29,7 @@ const router = createBrowserRouter([
     errorElement: <div>Esto está roto</div>,
     children: [
       { index: true, element: <Landing /> },
+      { path: "landing", element: <Landing /> },
       { path: "projects", element: <Projects /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
