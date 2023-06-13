@@ -8,7 +8,6 @@ import WHITE_LOGO from "../public/img/logo_blanco.png";
 import BLACK_LOGO from "../public/img/logo_negro.png";
 
 import Menu from "./components/right-menu/RightMenu";
-//import BackgroundAnimation from "../src/components/background-animation/BackgroundAnimation";
 import ThemeToggle from "./components/themetoggle/ThemeToggle";
 import "./components/themetoggle/themetoggle.scss";
 import CursorBubble from "./components/cursor-bubble/CursorBubble";
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <div className={`app ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-      {/*<BackgroundAnimation /> */}
       <header
         className={`header ${
           isDarkMode ? "text-color-light" : "text-color-dark"
