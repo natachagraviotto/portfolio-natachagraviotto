@@ -4,11 +4,14 @@ import { MdWbSunny, MdNightsStay } from "react-icons/md";
 //import { MdViewCompact } from "react-icons/md";
 import "./App.scss";
 import "./scss/global.scss";
+import WHITE_LOGO from "../public/img/logo_blanco.png";
+import BLACK_LOGO from "../public/img/logo_negro.png";
 
 import Menu from "./components/right-menu/RightMenu";
 //import BackgroundAnimation from "../src/components/background-animation/BackgroundAnimation";
 import ThemeToggle from "./components/themetoggle/ThemeToggle";
 import "./components/themetoggle/themetoggle.scss";
+import CursorBubble from "./components/cursor-bubble/CursorBubble";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,7 +33,7 @@ function App() {
             <a href="/landing">
               <img
                 className="logotipo"
-                src="/img/logo_negro.png"
+                src={isDarkMode ? WHITE_LOGO : BLACK_LOGO}
                 alt="Logotipo"
               />
             </a>
@@ -47,18 +50,10 @@ function App() {
           </div>
         </nav>
       </header>
-      <div
-        className={`content ${
-          isDarkMode ? "text-color-light" : "text-color-dark"
-        }`}
-      >
-        <h1></h1>
-        <h2></h2>
-        <h3></h3>
-        <h4></h4>
+      <div className="content">
+        <Outlet />
       </div>
-
-      <Outlet />
+      <CursorBubble />
     </div>
   );
 }

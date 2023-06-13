@@ -1,0 +1,30 @@
+.cursor-bubble {
+  animation: pulse 2s infinite;
+  background-color: #0ff;
+  box-shadow: -1px -1px 400px 200px #0ff;
+  width: 200px;
+  height: 200px;
+  transition-duration: 1s;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+
+  50% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+
+  100% {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+}
