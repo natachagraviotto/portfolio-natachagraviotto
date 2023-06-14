@@ -20,6 +20,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    box-shadow: 5px 5px 40px #3030304d;
   }
   .bg-viro {
     background-image: var(--bg-linear), url("/img/project-viro.jpg");
@@ -30,7 +31,7 @@
   }
 
   .bg-calculator {
-    background-image: var(--bg-linear), url("/img/project-app2.png");
+    background-image: var(--bg-linear), url("/img/project-calculator2.jpg");
   }
 
   .button-img {

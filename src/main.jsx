@@ -71,12 +71,18 @@ const router = createBrowserRouter([
         element: (
           <ProjectDetail
             category="Calculator"
-            tag="Ilustrator/Photoshop"
-            color="bisque"
+            tag="HTML/CSS/Javascript"
+            color="lightgreen"
             name="CALCULATOR"
-            behance="https://www.behance.net/gallery/167552931/Logotipo-VIRO"
-            text="This project highlights his unique style and creative approach, reflecting his artistic vision and technical skills. It conveys sophistication and elegance establishing a solid foundation to promote his brand and attract new clients in the world of interior design and architecture."
-            images={["/img/project-calculator.png", "/img/project-viro2.jpg"]}
+            github="https://github.com/natachagraviotto/calculator-js"
+            text="In the calculator exercise with JavaScript, CSS and HTML, I created an interactive application that allows you to perform mathematical calculations. I used HTML to structure the calculator, including the display screen and the number and operation buttons.
+
+            Then, I applied styles using CSS to give the calculator an attractive look and feel. I customized the colors, fonts and layouts to make it look nice. I also added styles to the buttons to highlight the hover effect and provide visual feedback to the user.
+            
+            In JavaScript, I captured the button events and handled the calculation logic. I implemented functions to perform the mathematical operations, validate user input and update the screen with the results. In addition, I added functionality such as the delete button and the equals button.
+            
+"
+            images={["/img/project-calculator.jpg"]}
           />
         ),
       },

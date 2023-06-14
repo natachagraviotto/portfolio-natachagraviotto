@@ -21,7 +21,7 @@ function Projects() {
 
         <ProjectBox
           title="Calculator project"
-          color="pink"
+          color="lightgreen"
           link="/projects/calculator"
           bgclass="bg-calculator"
         />
