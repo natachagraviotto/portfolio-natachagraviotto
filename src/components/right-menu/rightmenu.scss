@@ -25,7 +25,7 @@
 }
 
 .dark-mode .menu-content {
-  background-color: #ccc;
+  background-color: #ebebeb;
 }
 
 .menu-content {
@@ -40,6 +40,8 @@
   .links-menu li {
     margin-bottom: 10px;
     line-height: 2rem;
+    font-size: var(--font-xs);
+    font-weight: var(--medium-font-weight);
   }
   ul.links-menu li a {
     text-decoration: none;

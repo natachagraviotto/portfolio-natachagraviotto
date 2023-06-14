@@ -1,7 +1,7 @@
 .cursor-bubble {
-  animation: pulse 2s infinite;
-  background-color: #0ff;
-  box-shadow: -1px -1px 400px 200px #0ff;
+  animation: pulse 4s infinite;
+  // background-color: #0ff;
+  // box-shadow: -1px -1px 400px 200px #0ff;
   width: 200px;
   height: 200px;
   transition-duration: 1s;
@@ -13,6 +13,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 100%;
+}
+
+.dark-mode .cursor-bubble {
+  background-color: rgb(14, 175, 175);
+  box-shadow: -1px -1px 400px 200px rgb(14, 175, 175);
+}
+
+.light-mode .cursor-bubble {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1px -1px 400px 200px rgb(255, 255, 255);
 }
 
 @keyframes pulse {
